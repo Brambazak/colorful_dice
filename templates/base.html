@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>COLORFUL DICE</title>
+    <link rel="stylesheet" href="static home.css">
+</head>
+
+<body>
+
+<div class="menu-bar">
+<ul>
+    <li class="active"><a href="static.css.home">Home</a></li>
+
+    <li><a href="#">Info</a></li>
+    <li><a href="{% url 'login' %}">Login</a></li>
+
+    <li><a href="#">Crafts</a>
+        <div class="sub-menu">
+            <ul>
+                <li><a href="{% url 'wire' %}">Wire</a></li>
+                <li><a href="{% url 'crochet' %}">Crochet</a></li>
+                <li><a href="{% url 'origami' %}">Origami</a></li>
+                <li><a href="{% url 'decoupage' %}">Decoupage</a></li>
+            </ul>
+        </div>
+    </li>
+    <li><a href="{% url 'contact' %}">Contact Us</a></li>
+
+</ul>
+</div>
+</body>
+</html>

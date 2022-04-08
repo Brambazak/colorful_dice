@@ -1,0 +1,74 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-size: cover;
+    background: url(/templates/login_register_form/crafts_back.jpg) initial;
+    font-family: cursive;
+}
+.menu-bar
+{
+    background: rgb(128, 0, 0);
+    text-align: center;
+}
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+
+}
+.menu-bar ul li
+{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.active, .menu-bar ul li:hover
+{
+    background: rgb(165, 42, 42);
+    border-radius: 3px;
+}
+.sub-menu
+{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu
+{
+    display: block;
+    position: absolute;
+    background: rgb(255, 99, 71);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu ul
+{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu ul li:last-child
+{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu ul li a:hover
+{
+    color: rgb(255, 215, 0);
+}
